@@ -1,0 +1,36 @@
+
+
+.cabecera{
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.cabecera h1{
+    width: 30%;
+    float: left;
+}
+
+.cabecera .notificacion{
+    width: 70%;
+    height: 100%;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.cabecera .notificacion .content-notify{
+    background: red;
+    width: 300px;
+    height: 70px;
+    margin: 0px auto;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.clear-fix{
+    clear: both;
+}
+

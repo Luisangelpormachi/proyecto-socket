@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Aplicación con Sockets</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+
+    <link rel="stylesheet"  type="text/css" href="style.css"></link>
+</head>
+<body>
+    <div class="cabecera">
+        <h1>My App</h1>
+        <div class="notificacion">
+            <div id="notify" class="content-notify"></div>
+        </div>
+    </div>
+
+    <div class="clear-fix"></div>
+
+    <div id="title-welcome"></div>
+    
+    <div id="messages"></div>
+
+    <br>
+
+    <form onsubmit="return addMessages(this)">
+        <input type="text" id="username" placeholder="Tu Nombre"><br><br>
+        <input type="text" id="texto" placeholder="Cuéntanos algo..."><br><br>
+        <select id="usuarios">
+            <option value="todos">Todos</option>
+        </select><br><br>
+        <input type="submit" value="Enviar"></input><br>
+    </form>
+
+
+
+</body>
+</html>
